@@ -40,17 +40,6 @@ Download LLaMA-3B:
 Update the model_name path in Script 2 to point to your local LLaMA-3B model (e.g., "g:/My Drive/llama-3.2-3b-instruct").
 
 4> Directory Structure->
-project_folder/
-├── begin/                  # Images for "begin" stage
-├── early/                  # Images for "early" stage
-├── pre/                    # Images for "pre" stage
-├── post/                   # Images for "post" stage
-├── Project.ipynb           # Script 1: Model training, prediction, and advice
-├── predict_and_advice.py   # Script 2: Prediction and advice with Streamlit UI
-├── best_model.h5           # (Generated) Best model weights
-├── cancer_stage_classifier_vgg16_final.h5  # (Generated) Final model
-└── README.md               # This file
-
 Here you can download the CNN model file: https://drive.google.com/file/d/1rzeaO0Yjkw_FjPsWsnTrzrI7opbU5Mi9/view?usp=sharing
 Here you can download LLama3.2 3B model-> (option 1: Directly load the model from Hugging face, and option 2: request me on drive to download the LLama model).
 <i> Hugging face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct -> 
