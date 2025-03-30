@@ -1,0 +1,19 @@
+# requirements.txt
+# Dependencies for Cancer Stage Classification and Medical Advice System
+
+# Core machine learning and data processing
+tensorflow>=2.9.0  # For CNN model (VGG16) and training
+numpy>=1.23.0      # For numerical operations and array handling
+
+# Visualization
+matplotlib>=3.7.0  # For displaying images with predictions
+
+# Language model integration
+transformers>=4.35.0  # For LLaMA-3B model and tokenizer
+torch>=2.0.0         # PyTorch for running LLaMA-3B
+
+# PDF generation
+fpdf>=1.7.2        # For creating PDF reports
+
+# Optional: For image processing (included in TensorFlow, but explicit for clarity)
+pillow>=9.0.0      # For image loading and manipulation
