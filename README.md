@@ -40,14 +40,19 @@ Download LLaMA-3B:
 Update the model_name path in Script 2 to point to your local LLaMA-3B model (e.g., "g:/My Drive/llama-3.2-3b-instruct").
 
 4> Directory Structure->
+
 Here you can download the CNN model file: https://drive.google.com/file/d/1rzeaO0Yjkw_FjPsWsnTrzrI7opbU5Mi9/view?usp=sharing
+
 Here you can download LLama3.2 3B model-> (option 1: Directly load the model from Hugging face, and option 2: request me on drive to download the LLama model).
 <i> Hugging face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct -> 
+
 [from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")]
+
 <ii> Drive: https://drive.google.com/drive/folders/1EUpuE5uDAIozW-Sqh6mquE7RJibQDvDf?usp=sharing
+
 Here you can download the dataset: https://drive.google.com/drive/folders/1dYEVn-zYiWhwXm2HdXKiVadFcSjFD3Iw?usp=sharing
 
 5> Output
