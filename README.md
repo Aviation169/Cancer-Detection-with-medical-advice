@@ -49,6 +49,7 @@ Here you can download LLama3.2 3B model-> (option 1: Directly load the model fro
 [from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")
+
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")]
 
 <ii> Drive: https://drive.google.com/drive/folders/1EUpuE5uDAIozW-Sqh6mquE7RJibQDvDf?usp=sharing
@@ -57,8 +58,11 @@ Here you can download the dataset: https://drive.google.com/drive/folders/1dYEVn
 
 5> Output
 Training:
+
 Saved models: best_model.h5 (best weights) and cancer_stage_classifier_vgg16_final.h5 (final model).
+
 Console logs with training/validation metrics.
+
 Prediction:
 Console output: Predicted class, confidence, and medical advice.
 Visual output: Matplotlib plot of the image with prediction.
