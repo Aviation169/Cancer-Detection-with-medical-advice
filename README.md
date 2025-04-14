@@ -1,15 +1,16 @@
 🖼️Cancer Stage Classification and Medical Advice System🖼️
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-
 
-(⚠️!A GPU is required to run this code as it utilizes the LLama model for medical advice.)
+⚠️A GPU is required to run this code as it utilizes the LLama model for medical advice.
 
 This repository contains two Python scripts designed to classify cancer stages from images using a Convolutional Neural Network (CNN) with transfer learning (VGG16) and provide automated medical advice using a language model (LLaMA-3B). The system includes model training, prediction, and report generation capabilities.
 
 Script 1: Trains a CNN model to classify cancer stages (begin, early, pre, post) using images from specified directories then loads the trained model, predicts cancer stages for single or batch images, generates medical advice, and creates PDF reports without UI
+
 Script 2: Loads the trained model, predicts cancer stages for single or batch images, generates medical advice, and creates PDF reports with Streamlit UI.
 
 💻Features💻
--------------
+-
 🖼️Image Classification: Uses a pre-trained VGG16 model fine-tuned to classify cancer stages from images.
 
 📅Data Augmentation: Applies random flips, rotations, and brightness adjustments to improve model robustness.
@@ -21,50 +22,62 @@ Script 2: Loads the trained model, predicts cancer stages for single or batch im
 →Batch Processing: Supports single-image and batch predictions.
 
 📰Requirements📰
------------------
-Python 3.8+
-TensorFlow 2.x
-NumPy
-Matplotlib
-Transformers (Hugging Face)
-PyTorch (for LLaMA)
-FPDF (for PDF generation)
+-
+`Python 3.8+`
+
+`TensorFlow 2.x`
+
+`NumPy`
+
+`Matplotlib`
+
+`Transformers` (Hugging Face)
+
+`PyTorch` (for LLaMA)
+
+`FPDF` (for PDF generation)
+
 
 🖨️Setup🖨️
 ----------
 →Clone the Repository: 
+
 git clone <repository-url>
+
 cd <repository-folder>
 
 →Prepare Data:
+
 Organize your training images into four folders: begin, early, pre, and post.
+
 Supported formats: .png, .jpg, .jpeg.
 
 →Install Fonts (Optional):
-For PDF generation with special characters, ensure the FreeSans font is available (e.g., /usr/share/fonts/truetype/freefont/FreeSans.ttf on Linux). Adjust the path in Script 2 if needed.
+For PDF generation with special characters, ensure the FreeSans font is available `(e.g., /usr/share/fonts/truetype/freefont/FreeSans.ttf on Linux)`. Adjust the path in Script 2 if needed.
 
 →Download LLaMA-3B:
-Update the model_name path in Script 2 to point to your local LLaMA-3B model (e.g., "g:/My Drive/llama-3.2-3b-instruct").
+Update the model_name path in Script 2 to point to your local LLaMA-3B model `(e.g., "g:/My Drive/llama-3.2-3b-instruct")`.
 
 🧑‍💻Directory Structure🧑‍💻
 ------------------------
 
-🖼️Here you can download the CNN model file: https://drive.google.com/file/d/1rzeaO0Yjkw_FjPsWsnTrzrI7opbU5Mi9/view?usp=sharing
+🖼️Here you can download the CNN model file: `https://drive.google.com/file/d/1rzeaO0Yjkw_FjPsWsnTrzrI7opbU5Mi9/view?usp=sharing`
 
 →Here you can download LLama3.2 3B model-> (option 1: Directly load the model from Hugging face, and option 2: request me on drive to download the LLama model).
-😊Hugging face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct -> 
 
-Code{
+😊Hugging face: `https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct` -> 
+
+```
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
 tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")
 
 model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-3.2-3B-Instruct")
-}
+```
 
-🎰Drive: https://drive.google.com/drive/folders/1EUpuE5uDAIozW-Sqh6mquE7RJibQDvDf?usp=sharing
+🎰Drive: `https://drive.google.com/drive/folders/1EUpuE5uDAIozW-Sqh6mquE7RJibQDvDf?usp=sharing`
 
-📅Here you can download the dataset: https://drive.google.com/drive/folders/1dYEVn-zYiWhwXm2HdXKiVadFcSjFD3Iw?usp=sharing
+📅Here you can download the dataset: `https://drive.google.com/drive/folders/1dYEVn-zYiWhwXm2HdXKiVadFcSjFD3Iw?usp=sharing`
 
 📃Output📃
 -----------
